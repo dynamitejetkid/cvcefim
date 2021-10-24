@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+/*header*/
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAC05E;
+    color: #000;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.container_header {
+    max-width: 1320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 15rem;
+}
+.photo_benedicte {
+    position: absolute;
+    width: 20rem;
+    top: 4%;
+}
+header p {
+    padding: 12rem 6rem 0 6rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.arrow-down {
+    width: 2rem;
+    padding-top: 2rem;
+}
+
+/*cv*/
+.cv {
+    display: flex;
+    position: relative;
+    width: 100vw;
+}
+h3 {
+    padding-top: 1rem;
+    font-family: 'Righteous', cursive;
+    font-size: 1.3rem;
+}
+.dates {
+    font-size: 0.8rem;
+    padding: 0.2rem 0;
+}
+.infos {
+    width: 50%;
+}
+.experiences {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffc0cb;
+    color: #0C8346;
+}
+.experiences h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 6rem;
+    padding-right: 2rem;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+}
+.formations {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    padding: 2rem 2rem 2rem 4rem;
+    top: 10rem;
+    right: 0;
+    bottom: -25rem;
+    background-color: #0C8346;
+    color: #f7cdd4;
+}
+.formations h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 6rem;
+    padding-left: 2rem;
+    writing-mode: sideways-rl;
+    text-orientation: mixed;
+}
+
+/*galerie d'image*/
+.loisirs {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #FAC05E;
+}
+.contenu_loisirs {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    max-width: 85rem;
+    padding: 15rem 2rem 2rem 2rem;
+}
+.galerie_img {
+    min-height: 20rem;
+    max-width: 20rem;
+    flex: 20%;
+    object-fit: cover;
+}
+
+/*footer*/
+footer {
+    color: #000;
+    padding: 12rem 2rem 2rem 2rem;
+    width: 100vw;
+    height: 60vh;
+    background-image: url(icone/wave.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer h3 {
+    padding-left: 2.6rem;
+}
+footer a {
+    display: flex;
+    align-items: center;
+}
+footer a p {
+    margin-left: 1rem;
+    padding-top: 0.8rem;
+    border-bottom: #0C8346 6px dotted;
+}
+footer a p:hover {
+    border-bottom: #ffc0cb 6px dotted;
+}
+.footer_img {
+    width: 1.6rem;
+}
+.arrow-up {
+    width: 2rem;
+    position: relative;
+    left: 90%;
+}
+
+/*responsive*/
+    /*XS*/
+@media only screen and (min-width: 0px) and (max-width: 576px){
+h1 {
+    font-size : 4rem;
+}
+header p {
+    font-size: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
+}
+.photo_benedicte {
+    width: 8rem;
+    top: 5rem;
+}
+.cv {
+    display: flex;
+    flex-direction: column;
+}
+.experiences {
+    display: flex;
+    flex-direction: column;
+}
+.experiences h2 {
+    writing-mode: horizontal-tb;
+    font-size: 3rem;
+}
+.formations {
+    width: 100vw;
+    position: static;
+}
+.contenu_loisirs {
+    padding: 2rem;
+}
+.galerie_img {
+    height: 15rem;
+}
+footer {
+    height: 75vh;
+}
+footer a p {
+    font-size: 0.9rem;
+}
+.footer_img {
+    width: 1rem;
+}
+.arrow-up {
+    width: 1.5rem;
+}
+}
+    /*S*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+h1 {
+    font-size : 7rem;
+}
+.photo_benedicte {
+    width: 14rem;
+}
+.cv {
+    display: flex;
+    flex-direction: column;
+}
+.formations {
+    width: 100vw;
+    position: static;
+}
+.contenu_loisirs {
+    padding: 2rem;
+}
+.galerie_img {
+    width: 15rem;
+}
+}
+    /*M*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+h1 {
+    font-size : 9rem;
+}
+.photo_benedicte {
+    width: 18rem;
+}
+.cv {
+    display: flex;
+    flex-direction: column;
+}
+.formations {
+    width: 100vw;
+    position: static;
+}
+.contenu_loisirs {
+    padding: 2rem;
+}
+.galerie_img {
+    height: 15rem;
+}
+}
+    /*L*/
+@media only screen and (min-width: 992px) and (max-width: 1800px){
+h1 {
+    font-size: 12rem;
+}
+.photo_benedicte {
+    top: 10%;
+}
+.cv {
+    display: flex;
+    flex-direction: column;
+}
+.formations {
+    width: 100vw;
+    position: static;
+}
+.contenu_loisirs {
+    padding: 2rem;
+}
+.galerie_img {
+    height: 15rem;
+}
+footer {
+    padding: 0;
+    height: 45vh;
+}
+.footer_list {
+    padding-left: 2.5rem;
+}
+.arrow-up {
+    padding-bottom: 0.5rem;
+}}
+    /*XL*/
+@media only screen and (min-width: 1800px) {
+.experiences {
+    padding-left: 19%;
+}
+.formations {
+    right: 10%;
+}}
