@@ -69,6 +69,7 @@ h3 {
 }
 .experiences {
     display: flex;
+    justify-content: center;
     width: 100%;
     padding: 2rem;
     background-color: #ffc0cb;
@@ -78,7 +79,7 @@ h3 {
     font-family: 'Righteous', cursive;
     font-size: 6rem;
     padding-right: 2rem;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     text-orientation: mixed;
 }
 .formations {
@@ -98,7 +99,7 @@ h3 {
     font-family: 'Righteous', cursive;
     font-size: 6rem;
     padding-left: 2rem;
-    writing-mode: sideways-rl;
+    writing-mode: vertical-lr;
     text-orientation: mixed;
 }
 
@@ -292,6 +293,7 @@ footer {
 @media only screen and (min-width: 1800px) {
 .experiences {
     padding-left: 19%;
+    justify-content: flex-start;
 }
 .formations {
     right: 10%;
